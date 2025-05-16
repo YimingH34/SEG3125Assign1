@@ -13,14 +13,12 @@
         <script>
             document.querySelectorAll('.dropdown').forEach(function(dropdown) {
             const toggle = dropdown.querySelector('[data-bs-toggle="dropdown"]');
-
             dropdown.addEventListener('mouseenter', function () {
                 if (toggle) {
                 const instance = bootstrap.Dropdown.getOrCreateInstance(toggle);
                 instance.show();
                 }
             });
-
             dropdown.addEventListener('mouseleave', function () {
                 if (toggle) {
                 const instance = bootstrap.Dropdown.getOrCreateInstance(toggle);
@@ -28,8 +26,6 @@
                 toggle.blur();
                 }
             });
-
-
             toggle?.addEventListener('blur', () => {
                 const instance = bootstrap.Dropdown.getOrCreateInstance(toggle);
                 instance.hide();
@@ -56,10 +52,10 @@
                     Assignments
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="assignmentDropdown">
-                    <li><a class="dropdown-item" href="www.123.com">Assignment 1</a></li>
-                    <li><a class="dropdown-item" href="#">Assignment 2</a></li>
-                    <li><a class="dropdown-item" href="#">Assignment 3</a></li>
-                    <li><a class="dropdown-item" href="#">Assignment 4</a></li>
+                    <li><a class="dropdown-item" href="https://yimingh34.github.io/SEG3125Assign1/assignment1">Assignment 1</a></li>
+                    <li><a class="dropdown-item" href="https://yimingh34.github.io/SEG3125Assign1/assignment2">Assignment 2</a></li>
+                    <li><a class="dropdown-item" href="https://yimingh34.github.io/SEG3125Assign1/assignment3">Assignment 3</a></li>
+                    <li><a class="dropdown-item" href="https://yimingh34.github.io/SEG3125Assign1/assignment4">Assignment 4</a></li>
                 </ul>
             </li>
 
@@ -73,29 +69,67 @@
 
 
                 <div class="container my-4">
-<div class="container my-5">
-<div class="row align-items-center justify-content-center" style="max-width: 900px; margin: 0 auto;">
-    <!-- Text section -->
-    <div class="col-md-7 d-flex align-items-center" style="height: 400px;">
-      <div>
-        <h3>Who Am I?</h3>
-        <p>
-          I am a third year software engineering student, studying at University of Ottawa.
-          Some of my interests are computers, playing the bagpipe, traveling, and videogames.
-          When I am free, I like to play pool with some of my friends and play some games with friends.
-          This term, I wish to further develop my front-end skills and learn more technologies like JS and React.
-        </p>
-      </div>
-    </div>
+                    <div class="container my-5">
+                        <div class="row align-items-center justify-content-center" style="max-width: 900px; margin: 0 auto;">
+                            <div class="col-md-8 d-flex align-items-center" style="height: 400px;">
+                                <div>
+                                    <h3>Who Am I?</h3>
+                                    <p>
+                                    I am a third year software engineering student, studying at University of Ottawa.
+                                    Some of my interests are computers, playing the bagpipe, traveling, and videogames.
+                                    When I am free, I like to play pool with some of my friends and play some games with friends.
+                                    This term, I wish to further develop my front-end skills and learn more technologies like JS and React.
+                                    </p>
+                                </div>
+                            </div>
 
-    <!-- Image section -->
-    <div class="col-md-5">
-      <img src="image.jpg" alt="Image" class="img-fluid rounded" 
-           style="max-height: 400px; width: auto; object-fit: cover;">
-    </div>
-  </div>
-</div>
-            </div>
+                            <div class="col-md-4">
+                                <img src="image.jpg" alt="Image" class="img-fluid rounded" 
+                                    style="max-height: 400px; width: auto; object-fit: cover;">
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+
+                <div class="container my-4 ">
+                    
+                    <div class="row align-items-center justify-content-center">
+
+                        <div class="col-md-6">
+                            <h4 style="text-align: center;">
+                                Resources Used
+                            </h4>
+                            <div class="list-group">
+                                <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" class="list-group-item list-group-item-action d-flex align-items-center">
+                                    <img src="OIP.jpeg" alt="Image 1" class="rounded me-3" width="50" height="50">
+                                    <span>Bootstrap 5 documentation</span>                                
+                                </a>
+                                <a href="https://getbootstrap.com/docs/5.3/components/dropdowns/#via-javascript" class="list-group-item list-group-item-action d-flex align-items-center">
+                                    <img src="js.jpeg" alt="Image 1" class="rounded me-3" width="50" height="50">
+                                    <span>Javascript documentation</span>                                
+                                </a>
+                                <a href="https://www.nngroup.com/" class="list-group-item list-group-item-action d-flex align-items-center">
+                                    <img src="nielsen-norman-group-certification.webp" alt="Image 1" class="rounded me-3" width="50" height="50">
+                                    <span>Nielson Norman Group</span>                                
+                          
+                                </a>
+                                <a href="https://www.w3schools.com/" class="list-group-item list-group-item-action d-flex align-items-center">
+                                    <img src="w3schools-1536.png" alt="Image 1" class="rounded me-3" width="50" height="50">
+                                    <span>W3 Schools</span>       
+                                </a>
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-sm-6">
+                            <h4 style="text-align: center;">
+                                how i work
+                            </h4>
+                        </div>
+                    </div>
+
+                </div>
 
                 <div class="container bg-3 text-center assign">
                     <h3 class="titl">Personal Projects</h3>
@@ -119,6 +153,7 @@
                         </div>
                     </div>
                 </div>
+
             </main>
 
 
