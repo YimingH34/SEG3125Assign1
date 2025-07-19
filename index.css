@@ -2,7 +2,18 @@
 
 .custom-col {
     padding: 15px;
+  display: flex;
+  flex-direction: column;
 }
+
+.custom-col p {
+  flex-grow: 1; 
+}
+.button-55 {
+  margin-top: auto; /* pushes it to the bottom of the card */
+}
+
+
 
 .centered-img {
     display: block;
